@@ -5,10 +5,30 @@ import HeroSection from "../components/HeroSection";
 import Services from "../components/Services/ServiceList";
 import IconsGrid from "../components/IconsGrid";
 import FeatruedItems from "../components/FeaturedItems/FeaturedList";
-import companyMessage from "../components/companyMessage";
-import callToActionBar from "../components/callToActionBar";
+import CompanyMessage from "../components/companyMessage";
+import CallToActionBar from "../components/callToActionBar";
 
 export default function Home() {
+  const services = [
+    {
+      id: 1,
+      title: "Service 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam.",
+    },
+    {
+      id: 2,
+      title: "Service 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam.",
+    },
+    {
+      id: 3,
+      title: "Service 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam.",
+    },
+  ];
   return (
     <Fragment>
       <Head>
@@ -17,7 +37,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Hello Eutoura Hotel</h1>
+        <HeroSection />
+        <Services services={services} />
+        {/* <IconsGrid icons={services} /> */}
+        <FeatruedItems featuredItems={services} />
+        <CompanyMessage />
+        <CallToActionBar />
       </main>
     </Fragment>
   );

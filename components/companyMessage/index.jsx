@@ -7,7 +7,7 @@ export default function companyMessage(props) {
     <Fragment>
       <Image />
       <h2>{props.title || "Our Message"}</h2>
-      <p>{props.message || "Message goes Here..."}</p>
+      <p>{props.message || "Message of the company goes Here..."}</p>
     </Fragment>
   );
 }
