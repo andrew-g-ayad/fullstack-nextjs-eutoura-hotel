@@ -29,6 +29,26 @@ export default function Home() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam.",
     },
   ];
+  const featuredItems = [
+    {
+      id: 1,
+      title: "Service 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam.",
+    },
+    {
+      id: 2,
+      title: "Service 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam.",
+    },
+    {
+      id: 3,
+      title: "Service 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam.",
+    },
+  ];
   return (
     <Fragment>
       <Head>
@@ -40,7 +60,7 @@ export default function Home() {
         <HeroSection />
         <Services services={services} />
         {/* <IconsGrid icons={services} /> */}
-        <FeatruedItems featuredItems={services} />
+        <FeatruedItems featuredItems={featuredItems} />
         <CompanyMessage />
         <CallToActionBar />
       </main>
