@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import Head from "next/head";
 
+import SecondaryButton from "../components/ui/Buttons/SecondaryButton";
+
 export default function Home() {
   return (
     <Fragment>
