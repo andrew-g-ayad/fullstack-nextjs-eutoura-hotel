@@ -1,5 +1,13 @@
 import { Fragment } from "react";
 import Head from "next/head";
+
+import HeroSection from "../components/HeroSection";
+import Services from "../components/Services/ServiceList";
+import IconsGrid from "../components/IconsGrid";
+import FeatruedItems from "../components/FeaturedItems/FeaturedList";
+import companyMessage from "../components/companyMessage";
+import callToActionBar from "../components/callToActionBar";
+
 export default function Home() {
   return (
     <Fragment>
