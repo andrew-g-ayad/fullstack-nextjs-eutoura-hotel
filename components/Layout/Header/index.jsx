@@ -1,8 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import Style from "./style.module.scss";
 export default function Header(props) {
+  const imageDimensions = props.imageDimensions;
   return (
     <header>
+      <Image
+        src={props.image || "/images/logo-h.png"}
+        width={imageDimensions.width || 500}
+        height={imageDimensions.height || 300}
+      />
       <nav>
         <ul>
           <li>

@@ -9,7 +9,7 @@ import Style from "./style.module.scss";
 export default function Layout(props) {
   return (
     <Fragment>
-      <Header />
+      <Header imageDimensions={{ width: 110, height: 40 }} />
       {props.children}
       <Footer />
     </Fragment>
